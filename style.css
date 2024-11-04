@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2e2e2e;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+}
+
+header ul {
+    display: flex;
+    gap: 1rem;
+}
+
+header a {
+    text-decoration: none;
+}
+
+ul li {
+    color: #ffdd56;
+    list-style: none;
+    font-size: 1.3rem;
+    letter-spacing: 0.1rem;
+    text-transform: lowercase;
+    opacity: 80%;
+}
+
+ul li:hover {
+    font-weight: bold;
+    opacity: 100%;
+}
+
+.logo__cabecalho {
+    width: 5rem;
+}
+
+.icone__whats__cabecalho {
+    width: 3rem;
+}
+
+main {
+    margin-top: 5rem;
+}
+

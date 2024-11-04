@@ -1,0 +1,130 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.linha__de__produto {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-block: 2rem;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: rgb(233, 232, 232);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.imagem__principal__produto {
+    align-self: center;
+    width: 25rem;
+    cursor: pointer;
+
+}
+
+.imagem__principal__produto:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.preco__antigo {
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.imagens__extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0rem;
+    gap: 1rem;
+}
+
+.imagem__secundaria {
+    width: 5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.imagem__secundaria:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.descricao{
+    margin: 0.5rem 0rem;
+}
+
+.container__botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    width: 10rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+
+.container__botao:hover {
+    background-color: #7e7e7e;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao__whats {
+    padding: .5rem 3rem;
+    cursor: pointer;
+    width: 2rem;
+}
+
+.nome__oculos {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.nome__oculos span {
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
