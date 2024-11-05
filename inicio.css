@@ -99,6 +99,11 @@ ul li a {
     color: #ffffff;
 }
 
+.endereco__horario video {
+    display: flex;
+    background-color: red;
+}
+
 .horario {
     display: flex;
     flex-direction: column;
