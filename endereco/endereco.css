@@ -1,48 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Poiret One', sans-serif;
 }
 
-body{
+body {
     background-color: #2e2e2e;
 }
 
+.endereco__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    color: white;
+    margin-top: 68px;
+}
+
+.endereco__titulo {
+    font-size: 3rem;
+}
+
+.endereco__paragrafo {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.endereco__container :nth-child(3) {
+    font-size: 1.5rem;
+}
+
+.endereco__container iframe {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.endereco__container span {
+    color: #ffdd56;
+    font-weight: bold;
+}
 
 @media (max-width: 768px) {
-    .endereco__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-        color: white;
-        margin-top: 68px;
-    }
-
-    .endereco__titulo {
-        font-size: 3rem;
-    }
-    
-    .endereco__paragrafo {
-        font-size: 2rem;
-        text-align: center;
-        margin-top: 1rem;
-    }
-    
-    .endereco__container :nth-child(3){
-        font-size: 1.5rem;
-    }
-    
-    .endereco__container iframe {
-        margin-top: 1rem;
-        width: 100%;
-    }
-
-    .endereco__container span {
-        color: #ffdd56;
-        font-weight: bold;
-    }
+    /* Nenhuma alteração específica necessária, pois os estilos já se adaptam */
 }

@@ -5,17 +5,21 @@
     justify-content: center;
 }
 
-.main__promo h1 {
+.main__promo h1,
+.main__promo p,
+.promo__container h1,
+.promo__container p {
     color: #fff;
+    text-align: center;
 }
 
-.main__promo p {
-    color: #fff;
+.main__promo p,
+.promo__container p {
     margin-block: 1rem;
 }
 
 .main__promo img {
-    width: 100%;
+    width: 50%;
 }
 
 .promo__container {
@@ -24,21 +28,17 @@
     align-items: center;
     margin-block: 2rem;
 }
+
 .promo__container h1 {
-    color: #fff;
-    text-align: center;
     margin-bottom: 0.5rem;
     font-size: 2rem;
 }
 
 .promo__container a {
     text-decoration: none;
-} 
+}
 
 .promo__container p {
-    color: #fff;
-    text-align: center;
-    margin-block: 1rem;
     font-size: 1.5rem;
     padding-inline: 1rem;
 }
@@ -46,4 +46,10 @@
 span {
     font-weight: bold;
     color: #ffdd56;
+}
+
+@media (max-width: 768px) {
+    .main__promo img {
+        width: 100%;
+    }
 }
