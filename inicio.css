@@ -14,14 +14,22 @@ main, .logo__container{
     justify-content: center;
     width: 100%;
 }
+main {
+    padding-bottom: 1rem;
+}
 
 ul li a {
     text-decoration: none;
-    color
+}
+
+.logo__container {        
+    background-color: #2e2e2e;
+    color: white;
 }
 
 .img__logo {
-    width: 30rem;
+    width: 15rem;
+    opacity: 80%;
 }
 
 .redes__container {
@@ -29,13 +37,17 @@ ul li a {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin: 1rem 0rem;
+    opacity: 70%;
+
 }
 
 .redes__container img {
-    width: 5rem;
+    width: 2rem;
 }
 
 .redes__container p {
+    display: flex;
     margin: 0rem 5rem 0rem .5rem;
     font-size: 1.5rem;
 }
@@ -47,11 +59,98 @@ ul li a {
 .design__container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5rem;
-    margin: 1rem 0rem;
+    width: 100%;
+}
+
+.designe__titulo {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin: 2rem 0rem;
+}
+
+.borda__img__design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
 }
 
 .design__container img {
-    width: 15rem;
-    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.banner__mobile {
+    display: none;
+}
+
+.endereco__horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px){
+    
+    .logo__container {
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2e2e2e;
+    }
+    .img__logo {
+        width: 10rem;
+        opacity: 70%;
+    }
+
+    .redes__container {
+        align-items: center;
+        justify-content: space-around;
+        width: auto;
+        margin-top: 1rem;
+        width: 50%;
+    }
+
+
+    .redes__container p {
+        display: none;
+    }
+
+    .redes__container img {
+        width: 2rem;
+        opacity: 70%;
+    }
+
+    .banner__mobile {
+        display: flex;
+    }
+
+    .banner__desktop {
+        display: none;
+    }
+
+    .design__container {
+        flex-direction: row;    
+        gap: 1rem;
+    }
+
+
+    .design__container img {
+        width: 7rem;
+    }
 }

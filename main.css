@@ -93,6 +93,20 @@ main {
     text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+
+    .linha__de__produto{
+        flex-direction: column;
+    }
+
+    .produto {
+        margin-block: 1rem;
+        overflow: hidden;
+    }
+
+
+}
+
 
 
 
