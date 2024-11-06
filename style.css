@@ -44,6 +44,8 @@ ul li {
 ul li:hover {
     font-weight: bold;
     opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
 .logo__cabecalho {
@@ -104,14 +106,15 @@ main {
 
     .imagem__fechar {
         display: none;
-        width: 2rem;
+        width: 1.5rem;
         margin-bottom: 0.5rem;
+        margin-bottom: 2rem;
     }
 
     .imagem__menu {
         display: flex;
         margin-block: 0.5rem;
-        width: 3rem;
+        width: 1.5rem;
         align-self: flex-start;
         margin-left: 1rem;
     }
