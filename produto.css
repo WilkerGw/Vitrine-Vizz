@@ -1,11 +1,16 @@
 main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .linha__de__produto {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-block: 2rem;
 }
@@ -20,11 +25,36 @@ main {
     overflow: hidden;
 }
 
+/* Estilo dos botões de filtro */
+.filtro-modelo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filtro-btn {
+    padding: 10px 20px;
+    background-color: #2e2e2e;
+    color: white;
+    border: solid 1px rgba(255, 221, 86, 0.2);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.3rem;
+}
+
+.filtro-btn:hover {
+    background-color: #ffdd56;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+
 .imagem__principal__produto {
     align-self: center;
     width: 25rem;
     cursor: pointer;
-
 }
 
 .imagem__principal__produto:hover {
@@ -98,14 +128,35 @@ main {
 
     .linha__de__produto{
         flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
     }
 
     .produto {
         margin-block: 1rem;
+        width: 100%;
         overflow: hidden;
+        box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
     }
 
+    .filtro-modelo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .imagem__principal__produto {
+        width: 100%;
+    }
 
+    .imagens__extras {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 
