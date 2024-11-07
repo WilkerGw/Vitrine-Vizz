@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="endereco/endereco.css">
     <script src="script.js" defer ></script>
-
+    <script src="filtro-produtos.js" defer></script>
 </head>
 <body>
     <header>
@@ -69,9 +69,9 @@
         </section>-->
         <h1 class="designe__titulo">Design</h1>
         <section class="design__container">
-            <div class="borda__img__design"><img src="img/img-design/designe1.png" alt=""></div>
-            <div class="borda__img__design"><img src="img/img-design/designe2.png" alt=""></div>
-            <div class="borda__img__design"><img src="img/img-design/designe3.png" alt=""></div>
+            <div class="borda__img__design filtro-btn" onclick="filtrarModelo('redondo')"><img src="img/img-design/designe1.png" alt=""></div>
+            <div class="borda__img__design filtro-btn" onclick="filtrarModelo('quadrado')"><img src="img/img-design/designe2.png" alt=""></div>
+            <div class="borda__img__design filtro-btn" onclick="filtrarModelo('gatinho')"><img src="img/img-design/designe3.png" alt=""></div>
         </section>
     </main>
 </body>
