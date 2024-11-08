@@ -139,10 +139,9 @@ ul li a {
     justify-content: center;
 }
 
-.feature__container h1 {
+.feature__container > h1 {
     color: #ffffff;
     margin-top: 5rem;
-    font-size: 2.5rem;
 }
 
 .linha__destaque {
@@ -168,7 +167,7 @@ ul li a {
     border-radius: 1rem;
     display: none;
     position: absolute;
-    width: 50%;
+    width: 60%;
     z-index: 1000;
 }
 
