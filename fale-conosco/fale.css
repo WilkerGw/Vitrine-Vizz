@@ -1,10 +1,12 @@
 .fale__container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     color: white;
     padding-top: 3rem;
+    height: 100vh;
+    gap: 10rem;
 }
 
 .fale__container a {
@@ -19,7 +21,7 @@
 }
 
 .fale__container p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .fale__container img {

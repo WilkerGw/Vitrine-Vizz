@@ -18,6 +18,7 @@ body {
     padding-top: 1rem;
     color: white;
     margin-top: 68px;
+    width: 100%;
 }
 
 .endereco__titulo {
@@ -36,7 +37,12 @@ body {
 
 .endereco__container iframe {
     margin-top: 1rem;
-    width: 100%;
+    width: 70%;
+}
+
+.endereco__container > :nth-child(5) {
+    margin-top: 1rem;
+    font-size: 1.5rem;
 }
 
 .endereco__container span {

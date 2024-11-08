@@ -175,6 +175,7 @@ ul li a {
     width: 20rem;
     background-color: #7e7e7e6d;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 /* Quando o usuário passar o mouse sobre a imagem */
@@ -188,6 +189,7 @@ ul li a {
 .img__desc:hover .img__feature {
     transform: scale(1.1);  /* Aumenta um pouco a imagem para efeito visual */
     transition: transform 0.3s ease; /* Animação suave ao aumentar */
+    background-color: #fff;
 }
 
 
