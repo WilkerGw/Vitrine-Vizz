@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poiret One', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -13,9 +14,11 @@ main, .logo__container{
     align-items: center;
     justify-content: center;
     width: 100%;
+    background-color: red;
 }
 main {
     padding-bottom: 1rem;
+    width: 100%;
 }
 
 ul li a {
@@ -25,6 +28,7 @@ ul li a {
 .logo__container {        
     background-color: #2e2e2e;
     color: white;
+    width: 100%;
 }
 
 .img__logo {
@@ -39,12 +43,6 @@ ul li a {
     width: 100%;
     margin: 1rem 0rem;
     opacity: 60%;
-}
-
-.redes__container {
-    opacity: 100%;
-    transform: scale(1.2);
-    transition: 1s;
 }
 
 .redes__container img {
@@ -119,6 +117,10 @@ ul li a {
     color: #ffffff;
 }
 
+.endereco__horario > p {
+    margin-top: 2rem;
+}
+
 .horario {
     display: flex;
     flex-direction: column;
@@ -137,6 +139,7 @@ ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .feature__container > h1 {
@@ -146,10 +149,17 @@ ul li a {
 
 .linha__destaque {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 2rem;
+}
+
+.nome__oculos {
+    color: #ffffff;
+    text-align: center;
+    margin: 2rem 0rem 2rem 0rem;
 }
 
 .img__desc {
@@ -159,6 +169,7 @@ ul li a {
     justify-content: center;
     margin-inline: 5rem;
     position: relative;
+    width: 100%;
 }
 
 .desc {
@@ -172,23 +183,21 @@ ul li a {
 }
 
 .img__feature {
-    width: 20rem;
-    background-color: #7e7e7e6d;
+    width: 100%;
+    background-color: #fff;
     border-radius: 1rem;
     cursor: pointer;
 }
 
-/* Quando o usuário passar o mouse sobre a imagem */
 .img__desc:hover .desc {
-    display: block;   /* Torna a descrição visível */
-    opacity: 1;       /* Torna a descrição opaca */
+    display: block; 
+    opacity: 1;   
     transform: translateX(-5%) translateY(70%);
 }
 
-/* Para que a imagem também tenha um efeito ao passar o mouse */
 .img__desc:hover .img__feature {
-    transform: scale(1.1);  /* Aumenta um pouco a imagem para efeito visual */
-    transition: transform 0.3s ease; /* Animação suave ao aumentar */
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
     background-color: #fff;
 }
 
@@ -213,6 +222,29 @@ button:hover {
     transition: 1s;
 }
 
+.banner__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-block: 3rem;
+}
+
+.banner__img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.banner__img,
+.banner__mobile {
+    display: none;
+}
+
+.banner__img.active,
+.banner__mobile.active {
+    display: block; 
+}
 
 @media (max-width: 768px){
     
@@ -226,6 +258,10 @@ button:hover {
     .img__logo {
         width: 10rem;
         opacity: 70%;
+    }
+
+    .banner__mobile {
+        width: 100%;
     }
 
     .redes__container {
@@ -246,14 +282,6 @@ button:hover {
         opacity: 100%;
     }
 
-    .banner__mobile {
-        display: flex;
-    }
-
-    .banner__desktop {
-        display: none;
-    }
-
     .design__container {
         flex-direction: row;    
         gap: 1rem;
@@ -266,4 +294,16 @@ button:hover {
     .endereco__horario iframe {
         width: 100%;
     }
-}
+
+    .linha__destaque {
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .feature__container{
+        width: 100%;
+    }
+
+ }
+

@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poiret One', sans-serif;
+}
+
+
+main, .logo__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+main {
+    padding-bottom: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.logo__container {        
+    background-color: #2e2e2e;
+    color: white;
+}
+
+.img__logo {
+    width: 15rem;
+    opacity: 80%;
+}
+
+.redes__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0rem;
+    opacity: 60%;
+}
+
+.redes__container {
+    opacity: 100%;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.redes__container img {
+    width: 2rem;
+    opacity: 60%;
+}
+
+.redes__container img:hover {
+    opacity: 100%;
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.redes__container p {
+    display: flex;
+    margin: 0rem 5rem 0rem .5rem;
+    font-size: 1.5rem;
+}
+
+.banner__promocional, .banner__promocional img {
+    width: 100%;
+}
+
+.design__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%;
+}
+
+.designe__titulo {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin: 2rem 0rem;
+}
+
+.borda__img__design {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 50%;
+}
+
+.borda__img__design:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    opacity: 100%;
+}
+
+.design__container img {
+    width: 100%;
+    height: auto;
+}
+
+.banner__mobile {
+    display: none;
+}
+
+.endereco__horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horario span {
+    font-weight: bold;
+    color: #ffdd56;
+}
+
+/*DESTAQUE DE ÓCULOS*/
+
+.feature__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature__container > h1 {
+    color: #ffffff;
+    margin-top: 5rem;
+}
+
+.linha__destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.img__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline: 5rem;
+    position: relative;
+}
+
+.desc {
+    background-color: #7e7e7e;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: none;
+    position: absolute;
+    width: 60%;
+    z-index: 1000;
+}
+
+.img__feature {
+    width: 20rem;
+    background-color: #7e7e7e6d;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* Quando o usuário passar o mouse sobre a imagem */
+.img__desc:hover .desc {
+    display: block;   /* Torna a descrição visível */
+    opacity: 1;       /* Torna a descrição opaca */
+    transform: translateX(-5%) translateY(70%);
+}
+
+/* Para que a imagem também tenha um efeito ao passar o mouse */
+.img__desc:hover .img__feature {
+    transform: scale(1.1);  /* Aumenta um pouco a imagem para efeito visual */
+    transition: transform 0.3s ease; /* Animação suave ao aumentar */
+    background-color: #fff;
+}
+
+
+.img__feature:hover + .desc {
+    opacity: 1;
+  }
+
+button {
+    background-color: #ffdd56;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 20rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #ffdd566a;
+    border: none;
+    border-radius: 20rem;
+    transition: 1s;
+}
+
+
+@media (max-width: 768px){
+    
+    .logo__container {
+        align-items: center;
+        justify-content: space-around;
+        background-color: #2e2e2e;
+        margin-top: 1rem;
+    }
+
+    .img__logo {
+        width: 10rem;
+        opacity: 70%;
+    }
+
+    .redes__container {
+        align-items: center;
+        justify-content: space-around;
+        width: auto;
+        margin-top: 1rem;
+        width: 50%;
+        opacity: 100%;
+    }
+
+    .redes__container p {
+        display: none;
+    }
+
+    .redes__container img {
+        width: 2rem;
+        opacity: 100%;
+    }
+
+    .banner__mobile {
+        display: flex;
+    }
+
+    .banner__desktop {
+        display: none;
+    }
+
+    .design__container {
+        flex-direction: row;    
+        gap: 1rem;
+    }
+
+    .design__container img {
+        width: 7rem;
+    }
+
+    .endereco__horario iframe {
+        width: 100%;
+    }
+}

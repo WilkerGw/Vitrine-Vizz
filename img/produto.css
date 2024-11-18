@@ -1,0 +1,196 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.linha__de__produto {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-block: 2rem;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: rgb(233, 232, 232);
+    padding: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* Estilo dos botões de filtro */
+.filtro-modelo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filtro-btn {
+    padding: 10px 20px;
+    background-color: #2e2e2e;
+    color: white;
+    border: solid 1px rgba(255, 221, 86, 0.2);
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.3rem;
+}
+
+.filtro-btn:hover {
+    background-color: #ffdd56;
+    color: #2e2e2e;
+    font-weight: bold;
+}
+
+.imagem__principal__produto {
+    align-self: center;
+    width: 25rem;
+    cursor: pointer;
+}
+
+.imagem__principal__produto:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.preco__antigo {
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+
+.imagens__extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem 0rem;
+    gap: 1rem;
+}
+
+.imagem__secundaria {
+    width: 5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.imagem__secundaria:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.descricao{
+    margin: 0.5rem 0rem;
+}
+
+.container__botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e;
+    width: 10rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    margin-top: 0.3rem;
+}
+
+.container__botao:hover {
+    background-color: #7e7e7e;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.botao__whats {
+    padding: .5rem 3rem;
+    cursor: pointer;
+    width: 2rem;
+}
+
+.nome__oculos {
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.nome__oculos span {
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+
+    .linha__de__produto{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+    }
+
+    .produto {
+        margin-block: 1rem;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+    }
+
+    .filtro-modelo {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .imagem__principal__produto {
+        width: 100%;
+    }
+
+    .imagens__extras {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

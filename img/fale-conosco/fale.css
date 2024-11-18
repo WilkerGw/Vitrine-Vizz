@@ -1,0 +1,34 @@
+.fale__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding-top: 3rem;
+    height: 100vh;
+    gap: 10rem;
+}
+
+.fale__container a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.fale__container p {
+    font-size: 1.5rem;
+}
+
+.fale__container img {
+    width: 5rem;
+    opacity: 60%;
+}
+
+@media (max-width: 768px) {
+    /* Nenhuma alteração específica necessária, pois os estilos já se adaptam */
+}

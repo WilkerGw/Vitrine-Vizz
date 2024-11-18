@@ -97,10 +97,11 @@ main {
     align-items: center;
     justify-content: center;
     background-color: #2e2e2e;
-    width: 10rem;
     border-radius: 10rem;
     cursor: pointer;
     margin-top: 0.3rem;
+    padding: 0.5rem;
+    width: 3rem;
 }
 
 .container__botao:hover {
@@ -110,9 +111,9 @@ main {
 }
 
 .botao__whats {
-    padding: .5rem 3rem;
     cursor: pointer;
     width: 2rem;
+    display: block;
 }
 
 .nome__oculos {
