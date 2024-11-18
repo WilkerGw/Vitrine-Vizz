@@ -14,7 +14,6 @@ main, .logo__container{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: red;
 }
 main {
     padding-bottom: 1rem;
