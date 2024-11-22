@@ -64,7 +64,7 @@ ul li a {
     font-size: 1.5rem;
 }
 
-.banner__promocional, .banner__promocional img {
+.destaque__promocional, .destaque__promocional img {
     width: 100%;
 }
 
@@ -111,7 +111,7 @@ ul li a {
     display: none;
 }
 
-.endereco__horario {
+.container__endereco__horario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -144,22 +144,6 @@ ul li a {
     margin-top: 5rem;
 }
 
-.linha__destaque {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.img__desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-inline: 5rem;
-    position: relative;
-}
 
 .desc {
     background-color: #7e7e7e;
@@ -170,32 +154,6 @@ ul li a {
     width: 60%;
     z-index: 1000;
 }
-
-.img__feature {
-    width: 20rem;
-    background-color: #7e7e7e6d;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-/* Quando o usuário passar o mouse sobre a imagem */
-.img__desc:hover .desc {
-    display: block;   /* Torna a descrição visível */
-    opacity: 1;       /* Torna a descrição opaca */
-    transform: translateX(-5%) translateY(70%);
-}
-
-/* Para que a imagem também tenha um efeito ao passar o mouse */
-.img__desc:hover .img__feature {
-    transform: scale(1.1);  /* Aumenta um pouco a imagem para efeito visual */
-    transition: transform 0.3s ease; /* Animação suave ao aumentar */
-    background-color: #fff;
-}
-
-
-.img__feature:hover + .desc {
-    opacity: 1;
-  }
 
 button {
     background-color: #ffdd56;
@@ -263,7 +221,7 @@ button:hover {
         width: 7rem;
     }
 
-    .endereco__horario iframe {
+    .container__endereco__horario iframe {
         width: 100%;
     }
 }

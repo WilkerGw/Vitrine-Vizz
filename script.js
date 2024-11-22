@@ -1,6 +1,6 @@
 let btnFechar = document.querySelector('.imagem__fechar');
-let btnMenu = document.querySelector('.imagem__menu');
-let menuMobile = document.querySelector('.menu__mobile');
+let btnMenu = document.querySelector('.header__img__menu');
+let menuMobile = document.querySelector('.header__menu');
 
 // Evento para o botão Fechar
 btnFechar.addEventListener('click', function() {

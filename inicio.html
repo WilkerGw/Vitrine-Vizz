@@ -7,15 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="inicio.css">
     <link rel="stylesheet" href="endereco/endereco.css">
+    <link rel="stylesheet" href="produto.css">
     <script src="script.js" defer ></script>
     <script src="filtro-produtos.js" defer></script>
     <script src="carousel.js" defer ></script>
+    <script src="ver-mais.js" defer ></script>
 </head>
 <body>
     <header>
-        <a href="../inicio.html"><img src="img/logo-cabecalho.png" alt="" class="logo__cabecalho"></a>
-        <img src="../icons/btn-menu.png" alt="" class="imagem__menu">
-        <ul class="menu__mobile">
+        <a href="../inicio.html"> <!--LOGO VIZZ-->
+            <img src="img/logo-cabecalho.png" alt="" class="header__logo">
+        </a>
+        <img src="../icons/btn-menu.png" alt="" class="header__img__menu"> <!--ICONE MENU HAMBURGER-->
+        <ul class="header__menu"> <!--MENU-->
             <a href="inicio.html">
                 <li>Início</li>
             </a>
@@ -35,7 +39,9 @@
                 <li>Fale Conosco</li>
             </a>
         </ul>
-        <a href="https://wa.me/551123628799"><img src="img/whatsapp (2).png" alt="" class="icone__whats__cabecalho"></a>
+        <a href="https://wa.me/551123628799"> <!--ICONE WHATSAPP-->
+            <img src="img/whatsapp (2).png" alt="" class="icone__whats__cabecalho">
+        </a>
         <img src="../icons/btn-fechar.png" alt="" class="imagem__fechar">
     </header>
     <main>
@@ -55,21 +61,58 @@
             <img src="img/129,99/2 mobile.png" alt="" class="banner__mobile">
             <img src="img/129,99/3 mobile.png" alt="" class="banner__mobile">
         </section>
-        <section class="endereco__horario">
-            <p>Avenida do Oratório, 4869, Vila Industrial, São Paulo - SP</p>
-            <iframe 
-                width="600" 
-                height="400" 
-                src="https://www.youtube.com/embed/jxkCAks31ag" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
+        <section class="destaque__promocional">
+            <h1>Proteção contra raios <span class="destaque__span">UV400</span></h1>
+            <p>Confira nossa linha de óculos de Sol com proteção contra raios nocivos para saúde de seus olhos</p>
+            <div class="container__destaque__img">
+                <img src="img/img/129,99/banner sol/1.png" alt="">
+                <img src="img/img/129,99/banner sol/2.png" alt="">
+            </div>
+            <div class="destaque__produto">
+                <div class="destaque__img__produto">
+                    <img src="img/img/oculos de sol/Holanda/holanda1.webp" alt="" class="dest__um">
+                    <img src="img/img/oculos de sol/Holanda/holanda2.webp" alt="" class="dest__dois">
+                </div>
+                <div class="destaque__img__produto">
+                    <img src="img/img/oculos de sol/Holanda/holanda4.webp" alt="" class="dest__um">
+                    <img src="img/img/oculos de sol/Holanda/holanda5.webp" alt="" class="dest__dois">
+                </div>
+                <div class="destaque__img__produto">
+                    <img src="img/img/oculos de sol/Holanda/holanda10.webp" alt="" class="dest__um">
+                    <img src="img/img/oculos de sol/Holanda/holanda11.webp" alt="" class="dest__dois">
+                </div>
+                <div class="destaque__img__produto">
+                    <img src="img/img/oculos de grau/Regency Azul/01.webp" alt="" class="dest__um">
+                    <img src="img/img/oculos de grau/Regency Azul/02.webp" alt="" class="dest__dois">
+                </div>
+                <div class="destaque__img__produto">
+                    <img src="img/img/oculos de grau/Regency Prata/01.webp" alt="" class="dest__um">
+                    <img src="img/img/oculos de grau/Regency Prata/02.webp" alt="" class="dest__dois">
+                </div>
+                <div class="destaque__img__produto">
+                    <img src="img/img/oculos de grau/Regency Preto/01.webp" alt="" class="dest__um">
+                    <img src="img/img/oculos de grau/Regency Preto/02.webp" alt="" class="dest__dois">
+                </div>
+            </div>           
+        </section>
+        <section class="container__endereco__horario">
             <div class="horario">
+                <h1>Endereço</h1>
+                <p>Avenida do Oratório, 4869, Vila Industrial, São Paulo - SP</p>
                 <p>Segunda à Sexta das <span>10:00</span> às <span>19:00</span></p>
                 <p>Sábados das <span>10:00</span> às <span>17:00</span></p>
                 <p>Domingo das <span>10:00</span> às <span>15:00</span></p>
+            </div>
+            <div class="endereco__video">
+                <iframe
+                width="600"
+                height="400"
+                src="https://www.youtube.com/embed/jxkCAks31ag"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+                </iframe>
             </div>
         </section>
         <h1 class="designe__titulo">Design</h1>
@@ -83,85 +126,6 @@
             <a href="">
                 <div class="borda__img__design filtro-btn" onclick="filtrarModelo('gatinho')"><img src="img/img-design/designe3.png" alt=""></div>
             </a>
-        </section>
-        <section class="feature__container">
-            <h1>Destaques</h1>
-            <div class="linha__destaque">
-                <article class="img__desc">
-                    <h1 class="nome__oculos">Black Bridge</h1>
-                    <img src="img/oculos de sol/PNG/Black Bridge.png" alt="" class="img__feature">
-                    <div class="desc">
-                        <h1>Óculos de Sol com proteção <span>UV400</span>.</h1>
-                        <h3 class="preco__normal">R$ 129,99</h3>
-                        <h1 class="preco__promo">R$ 99,99</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="btn__comprar">COMPRAR</button>
-                        <button class="btn__ver">Ver mais</button></h1>
-                    </div>
-                </article>
-                <article class="img__desc">
-                    <h1 class="nome__oculos">Black Bridge</h1>
-                    <img src="img/oculos de sol/PNG/Gamma.png" alt="" class="img__feature">
-                    <div class="desc">
-                        <h1>Óculos de Sol com proteção <span>UV400</span>.</h1>
-                        <h3 class="preco__normal">R$ 129,99</h3>
-                        <h1 class="preco__promo">R$ 99,99</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="btn__comprar">COMPRAR</button>
-                        <button class="btn__ver">Ver mais</button></h1>
-                    </div>
-                </article>
-                <article class="img__desc">
-                    <h1 class="nome__oculos">Havana</h1>
-                    <img src="img/oculos de sol/PNG/Havana.png" alt="" class="img__feature">
-                    <div class="desc">
-                        <h1>Óculos de Sol com proteção <span>UV400</span>.</h1>
-                        <h3 class="preco__normal">R$ 129,99</h3>
-                        <h1 class="preco__promo">R$ 99,99</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="btn__comprar">COMPRAR</button>
-                        <button class="btn__ver">Ver mais</button></h1>
-                    </div>
-                </article>
-            </div>
-            <div class="linha__destaque">
-                <article class="img__desc">
-                    <h1 class="nome__oculos">Manhattan</h1>
-                    <img src="img/oculos de sol/PNG/Manhattan.png" alt="" class="img__feature">
-                    <div class="desc">
-                        <h1>Óculos de Sol com proteção <span>UV400</span>.</h1>
-                        <h3 class="preco__normal">R$ 129,99</h3>
-                        <h1 class="preco__promo">R$ 99,99</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="btn__comprar">COMPRAR</button>
-                        <button class="btn__ver">Ver mais</button></h1>
-                    </div>
-                </article>
-                <article class="img__desc">
-                    <h1 class="nome__oculos">Monroe Classic</h1>
-                    <img src="img/oculos de sol/PNG/monroe2.png" alt="" class="img__feature">
-                    <div class="desc">
-                        <h1>Óculos de Sol com proteção <span>UV400</span>.</h1>
-                        <h3 class="preco__normal">R$ 129,99</h3>
-                        <h1 class="preco__promo">R$ 99,99</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="btn__comprar">COMPRAR</button>
-                        <button class="btn__ver">Ver mais</button></h1>
-                    </div>
-                </article>
-                <article class="img__desc">
-                    <h1 class="nome__oculos">Rio</h1>
-                    <img src="img/oculos de sol/PNG/Rio2.png" alt="" class="img__feature">
-                    <div class="desc">
-                        <h1>Óculos de Sol com proteção <span>UV400</span>.</h1>
-                        <h3 class="preco__normal">R$ 129,99</h3>
-                        <h1 class="preco__promo">R$ 99,99</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <button class="btn__comprar">COMPRAR</button>
-                        <button class="btn__ver">Ver mais</button></h1>
-                    </div>
-                </article>
-            </div>
         </section>
     </main>
 </body>

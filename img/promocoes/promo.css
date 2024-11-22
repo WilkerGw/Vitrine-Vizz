@@ -1,24 +1,24 @@
-.main__promo {
+.promo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.main__promo h1,
-.main__promo p,
+.promo h1,
+.promo p,
 .promo__container h1,
 .promo__container p {
     color: #fff;
     text-align: center;
 }
 
-.main__promo p,
+.promo p,
 .promo__container p {
     margin-block: 1rem;
 }
 
-.main__promo img {
+.promo img {
     width: 50%;
 }
 
@@ -49,7 +49,7 @@ span {
 }
 
 @media (max-width: 768px) {
-    .main__promo img {
+    .promo img {
         width: 100%;
     }
 }

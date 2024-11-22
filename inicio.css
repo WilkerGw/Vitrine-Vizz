@@ -61,7 +61,7 @@ ul li a {
     font-size: 1.5rem;
 }
 
-.banner__promocional, .banner__promocional img {
+.destaque__promocional, .destaque__promocional img {
     width: 100%;
 }
 
@@ -108,15 +108,17 @@ ul li a {
     display: none;
 }
 
-.endereco__horario {
+.container__endereco__horario {
+    width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     gap: 1rem;
     color: #ffffff;
+    margin-top: 5rem;
 }
 
-.endereco__horario > p {
+.container__endereco__horario > p {
     margin-top: 2rem;
 }
 
@@ -124,12 +126,94 @@ ul li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 .horario span {
     font-weight: bold;
     color: #ffdd56;
 }
+
+.endereco__video {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.endereco__video iframe {
+    width: 100%;
+}
+
+/* ------------------- BANNER PROMOCIONAL SOL-----------------------------------*/
+.destaque__promocional, .container__destaque__img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destaque__promocional{
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.destaque__promocional h1, p {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.destaque__promocional p {
+    margin-block: 1rem;
+}
+
+.container__destaque__img {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.container__destaque__img img {
+    width: 30%;
+    border-radius: 1rem;
+}
+
+.destaque__produto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.destaque__img__produto {
+    width: 12%;
+}
+
+.dest__um, .dest__dois {
+    width: 100%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.destaque__span {
+    color: #ffdd56;
+}
+
+.dest__dois {
+    display: none;
+}
+
+/* Quando o cursor passa sobre dest__um, esconde ele e mostra dest__dois */
+.destaque__img__produto:hover .dest__um {
+    display: none;
+    transform: 1s;
+}
+
+.destaque__img__produto:hover .dest__dois {
+    display: block;
+}
+
+
+
 
 /*DESTAQUE DE ÓCULOS*/
 
@@ -145,65 +229,6 @@ ul li a {
     color: #ffffff;
     margin-top: 5rem;
 }
-
-.linha__destaque {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 2rem;
-}
-
-.nome__oculos {
-    color: #ffffff;
-    text-align: center;
-    margin: 2rem 0rem 2rem 0rem;
-}
-
-.img__desc {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-inline: 5rem;
-    position: relative;
-    width: 100%;
-}
-
-.desc {
-    background-color: #7e7e7e;
-    padding: 1rem;
-    border-radius: 1rem;
-    display: none;
-    position: absolute;
-    width: 60%;
-    z-index: 1000;
-}
-
-.img__feature {
-    width: 100%;
-    background-color: #fff;
-    border-radius: 1rem;
-    cursor: pointer;
-}
-
-.img__desc:hover .desc {
-    display: block; 
-    opacity: 1;   
-    transform: translateX(-5%) translateY(70%);
-}
-
-.img__desc:hover .img__feature {
-    transform: scale(1.1); 
-    transition: transform 0.3s ease; 
-    background-color: #fff;
-}
-
-
-.img__feature:hover + .desc {
-    opacity: 1;
-  }
 
 button {
     background-color: #ffdd56;
@@ -290,18 +315,58 @@ button:hover {
         width: 7rem;
     }
 
-    .endereco__horario iframe {
+    .container__endereco__horario {
+        flex-direction: column;
+    }
+
+    .horario {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .horario span {
+        font-size: 1rem;
+    }
+
+    .endereco__video {
         width: 100%;
     }
 
-    .linha__destaque {
-        flex-direction: column;
+    .endereco__video iframe {
         width: 100%;
-        gap: 2rem;
     }
+
 
     .feature__container{
         width: 100%;
+    }
+
+    .destaque__promocional > p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .container__destaque__img {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .container__destaque__img img {
+        width: 100%;
+    }
+
+    .destaque__produto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .destaque__img__produto {
+        width: 11rem;
+    }
+
+    .dest__um, .dest__dois {
+        width: 11rem;
     }
 
  }

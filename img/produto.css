@@ -34,23 +34,6 @@ main {
     margin: 20px 0;
 }
 
-.filtro-btn {
-    padding: 10px 20px;
-    background-color: #2e2e2e;
-    color: white;
-    border: solid 1px rgba(255, 221, 86, 0.2);
-    border-radius: 3rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    font-size: 1.3rem;
-}
-
-.filtro-btn:hover {
-    background-color: #ffdd56;
-    color: #2e2e2e;
-    font-weight: bold;
-}
-
 .imagem__principal__produto {
     align-self: center;
     width: 25rem;

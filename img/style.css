@@ -52,7 +52,7 @@ ul li:hover {
     transition: 0.5s;
 }
 
-.logo__cabecalho {
+.header__logo {
     width: 5rem;
     opacity: 80%;
 }
@@ -75,7 +75,7 @@ main {
     display: none;
 }
 
-.imagem__menu {
+.header__img__menu {
     display: none;
 }
 
@@ -106,7 +106,7 @@ main {
         margin-top: 64px;
     }
 
-    .icone__whats__cabecalho, .logo__cabecalho {
+    .icone__whats__cabecalho, .header__logo {
         display: none;
     }
 
@@ -117,7 +117,7 @@ main {
         margin-bottom: 2rem;
     }
 
-    .imagem__menu {
+    .header__img__menu {
         display: flex;
         margin-block: 0.5rem;
         width: 1.5rem;
@@ -125,7 +125,7 @@ main {
         margin-left: 1rem;
     }
 
-    .menu__mobile {
+    .header__menu {
         display: none;
     }
 

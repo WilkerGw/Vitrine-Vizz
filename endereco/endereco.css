@@ -10,38 +10,43 @@ body {
     background-color: #2e2e2e;
 }
 
+.main__endereco {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
 .endereco__container {
+    width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 1rem;
     color: white;
-    margin-top: 68px;
-    width: 100%;
 }
 
 .endereco__titulo {
     font-size: 3rem;
+    color: #ffdd56;
 }
 
 .endereco__paragrafo {
     font-size: 2rem;
     text-align: center;
-    margin-top: 1rem;
 }
 
 .endereco__container :nth-child(3) {
     font-size: 1.5rem;
 }
 
-.endereco__container iframe {
-    margin-top: 1rem;
-    width: 70%;
+iframe {
+    width: 40%;
+    border-radius: 1rem;
 }
 
 .endereco__container > :nth-child(5) {
-    margin-top: 1rem;
     font-size: 1.5rem;
 }
 
@@ -51,5 +56,30 @@ body {
 }
 
 @media (max-width: 768px) {
-    /* Nenhuma alteração específica necessária, pois os estilos já se adaptam */
+
+    .main__endereco {
+        width: 100%;
+        display: flex;
+        gap: 2rem;
+    }
+
+    .endereco__titulo {
+        font-size: 2rem;
+    }
+
+    .endereco__paragrafo {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .endereco__paragrafo span {
+        font-size: 1.2rem;
+    }
+
+    .main__endereco iframe {
+        width: 100%;
+    }
+    .endereco__container {
+        width: 100%;
+    }
 }

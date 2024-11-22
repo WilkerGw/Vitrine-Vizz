@@ -53,7 +53,7 @@ ul li:hover {
     transition: 0.5s;
 }
 
-.logo__cabecalho {
+.header__logo {
     width: 5rem;
     opacity: 80%;
 }
@@ -76,7 +76,7 @@ main {
     display: none;
 }
 
-.imagem__menu {
+.header__img__menu {
     display: none;
 }
 
@@ -84,7 +84,9 @@ main {
 @media (max-width: 768px) {
 
     header {
-        flex-direction: column;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 1rem; 
         height: auto;
         position: fixed;
@@ -107,7 +109,7 @@ main {
         margin-top: 64px;
     }
 
-    .icone__whats__cabecalho, .logo__cabecalho {
+    .icone__whats__cabecalho, .header__logo {
         display: none;
     }
 
@@ -116,9 +118,13 @@ main {
         width: 1.5rem;
         margin-bottom: 0.5rem;
         margin-bottom: 2rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 1rem 1rem;
     }
 
-    .imagem__menu {
+    .header__img__menu {
         display: flex;
         margin-block: 0.5rem;
         width: 1.5rem;
@@ -126,7 +132,7 @@ main {
         margin-left: 1rem;
     }
 
-    .menu__mobile {
+    .header__menu {
         display: none;
     }
 
