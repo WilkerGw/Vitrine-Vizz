@@ -130,8 +130,9 @@ ul li a {
 }
 
 .horario span {
-    font-weight: bold;
+    font-weight: 100;
     color: #ffdd56;
+    font-size: 1rem;
 }
 
 .endereco__video {
@@ -157,9 +158,14 @@ ul li a {
     margin-top: 3rem;
 }
 
-.destaque__promocional h1, p {
+.destaque__promocional p {
     color: #ffffff;
     font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.horario h1 {
+    font-weight: 100;
 }
 
 .destaque__promocional p {
@@ -185,7 +191,7 @@ ul li a {
 }
 
 .destaque__img__produto {
-    width: 12%;
+    width: 10%;
 }
 
 .dest__um, .dest__dois {

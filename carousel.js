@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Alterna as imagens a cada 3 segundos
-    setInterval(changeImage, 3000);
+    setInterval(changeImage, 7000);
 
     // Adiciona o listener para mudanças de tamanho de tela
     window.addEventListener("resize", handleResize);
