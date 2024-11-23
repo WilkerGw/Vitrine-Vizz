@@ -141,9 +141,12 @@ ul li a {
     align-items: center;
     justify-content: center;
 }
-.endereco__video iframe {
-    width: 100%;
+
+.endereco__video > iframe {
+    width: 600px;
+    height: 450px;
 }
+
 
 /* ------------------- BANNER PROMOCIONAL SOL-----------------------------------*/
 .destaque__promocional, .container__destaque__img {
