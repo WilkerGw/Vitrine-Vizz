@@ -46,11 +46,10 @@ ul li a {
 
 .redes__container img {
     width: 2rem;
-    opacity: 60%;
+    opacity: 100%;
 }
 
 .redes__container img:hover {
-    opacity: 100%;
     transform: scale(1.2);
     transition: 1s;
 }
@@ -112,27 +111,32 @@ ul li a {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     gap: 1rem;
     color: #ffffff;
     margin-top: 5rem;
 }
 
-.container__endereco__horario > p {
-    margin-top: 2rem;
-}
-
 .horario {
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
+}
+
+.horario h1 {
+    font-size: 2.5rem;
+}
+
+.horario p {
+    font-size: 1.5rem;
 }
 
 .horario span {
     font-weight: 100;
     color: #ffdd56;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .endereco__video {
@@ -147,7 +151,6 @@ ul li a {
     height: 450px;
 }
 
-
 /* ------------------- BANNER PROMOCIONAL SOL-----------------------------------*/
 .destaque__promocional, .container__destaque__img {
     width: 100%;
@@ -161,18 +164,19 @@ ul li a {
     margin-top: 3rem;
 }
 
-.destaque__promocional p {
+.destaque__promocional p{
     color: #ffffff;
     font-size: 1.5rem;
-    font-size: 1rem;
+    margin-bottom: 3rem;
+}
+
+.destaque__promocional h1  {
+    color: #ffffff;
+    font-weight: 100;
 }
 
 .horario h1 {
     font-weight: 100;
-}
-
-.destaque__promocional p {
-    margin-block: 1rem;
 }
 
 .container__destaque__img {
@@ -193,8 +197,16 @@ ul li a {
     margin-top: 2rem;
 }
 
+.container__regency, .container__holanda {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
 .destaque__img__produto {
-    width: 10%;
+    width: 20%;
 }
 
 .dest__um, .dest__dois {
@@ -214,7 +226,7 @@ ul li a {
 /* Quando o cursor passa sobre dest__um, esconde ele e mostra dest__dois */
 .destaque__img__produto:hover .dest__um {
     display: none;
-    transform: 1s;
+    transition: 1s;
 }
 
 .destaque__img__produto:hover .dest__dois {
@@ -326,6 +338,7 @@ button:hover {
 
     .container__endereco__horario {
         flex-direction: column;
+        width: 100%;
     }
 
     .horario {
@@ -335,6 +348,12 @@ button:hover {
 
     .horario span {
         font-size: 1rem;
+    }
+
+    .horario p {
+        width: 100%;
+        text-align: justify;
+        hyphens: auto;
     }
 
     .endereco__video {
